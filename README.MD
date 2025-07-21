@@ -23,3 +23,19 @@
 ```bash
 git clone https://github.com/ilkorplay2011/intereting-fact-user-upload.git
 cd intereting-fact-user-upload
+
+Создайте виртуальное окружение и активируйте его:
+
+Linux/macOS:
+
+python3 -m venv venv
+source venv/bin/activate
+
+Windows CMD:
+
+python -m venv venv
+venv\Scripts\activate
+Установите зависимости:
+pip install flask
+Запустите приложение:
+python app.py
