@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <form method="post">
+        <input type="text" placeholder="enter your fact" name="fact" required id="inp">
+        <button onclick="alerting()">add</button>
+        <a href="/">return to main site</a>
+    </form>
+    <script>
+        function alerting(){
+            input = document.getElementById("inp")
+            if(input.value === ""){
+                alert("error")
+            }else{
+                alert("succes added")
+            }
+        }
+    </script>
+</body>
+</html>
